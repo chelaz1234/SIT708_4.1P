@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a New Task"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#42eff5"/>
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:hint="Enter Title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_title"
+        android:layout_marginTop="26dp"
+        android:hint="Enter Description"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/buttonPickDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/et_description"
+        android:backgroundTint="#C5862B"
+        android:layout_marginTop="32dp"
+        android:text="Set Task Due Date" />
+
+    <Button
+        android:id="@+id/btnAddTaskToDb"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#F44336"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPickDateTime"
+        android:layout_marginTop="32dp"
+        android:text="Create" />
+
+
+</RelativeLayout>
